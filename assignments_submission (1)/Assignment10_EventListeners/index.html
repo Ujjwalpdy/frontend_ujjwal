@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Assignment 10 — Event Listeners</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Assignment 10 — Event Listeners</h1>
+
+    <section class="card">
+      <h2>Change Background Color</h2>
+      <button id="changeColorBtn">Change Color</button>
+      <p class="hint">Click the button to change the page background randomly.</p>
+    </section>
+
+    <section class="card">
+      <h2>Double Click Image Zoom</h2>
+      <div class="image-wrap">
+        <img id="zoomImg" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='300'><rect width='100%' height='100%' fill='%23ddd'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='24' fill='%23666'>Double-click to zoom</text></svg>" alt="Double click demo">
+      </div>
+      <p class="hint">Double-click image to zoom in/out.</p>
+    </section>
+
+    <section class="card">
+      <h2>Keyboard Key Logger</h2>
+      <input id="keyInput" placeholder="Type here..." autocomplete="off">
+      <p id="keyOutput">You pressed: <span class="key">—</span></p>
+      <p class="hint">Press any key while focus is in the input (or anywhere on the page).</p>
+    </section>
+
+    <footer class="footer">Made for submission</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
