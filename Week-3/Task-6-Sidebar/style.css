@@ -1,0 +1,8 @@
+body { display:flex; margin:0; font-family: Arial, sans-serif; }
+.sidebar { width:220px; background:#222; color:white; padding:20px; min-height:100vh; box-sizing:border-box; }
+.sidebar a { color: #fff; display:block; margin:8px 0; text-decoration:none; }
+.content { padding:20px; flex:1; }
+@media(max-width:700px){
+    body { flex-direction:column; }
+    .sidebar { width:100%; min-height:auto; }
+}
