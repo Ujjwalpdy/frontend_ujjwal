@@ -1,0 +1,6 @@
+p { font-size: 18px; }
+.info { color: #ff5733; }
+#title { color: rgb(0, 120, 255); }
+[data-role="highlight"] { background: hsl(200, 80%, 90%); padding: 6px; }
+.box:hover { background: rgba(255,0,0,0.15); cursor: pointer; }
+p::first-letter { font-size: 28px; font-weight: bold; }
