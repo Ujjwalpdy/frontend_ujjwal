@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><title>Async Simulation</title></head><body>
+<button id="load">Load Data</button>
+<div id="out"></div>
+<script>
+function fetchSim(){
+    return new Promise(resolve=> setTimeout(()=> resolve({message:'Data from server'}), 1500));
+}
+document.getElementById('load').addEventListener('click', async ()=>{
+    document.getElementById('out').textContent = 'Loading...';
+    const data = await fetchSim();
+    document.getElementById('out').textContent = JSON.stringify(data);
+});
+</script>
+</body></html>
